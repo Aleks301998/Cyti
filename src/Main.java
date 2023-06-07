@@ -13,7 +13,7 @@ public class Main {
             List<String> longestChain = findLongestWordChain(cities);
             printWordChain(longestChain);
         } else {
-            System.out.println("Файл порожній або не вдалося прочитати.");
+            throw new IllegalArgumentException("The list of cities is empty.");
         }
     }
 
